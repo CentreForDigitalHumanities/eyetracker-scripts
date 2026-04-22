@@ -8,9 +8,10 @@ fpm -s dir \
     --version 1.0.0  \
     --architecture all \
     --depends python3 \
+    --depends python3-pil \
     --depends eyelink-edf2asc \
     --license gpl3 \
     --url https://github.com/CentreForDigitalHumanities/eyetracker-script \
-    edfinfo.py=/usr/bin/edfinfo \
-    mkasczep.py=/usr/bin/mkasczep \
-    mkobtzep.py=/usr/bin/mkobtzep
+    edfinfo.py=/usr/bin/edfinfo.py \
+    mkasczep.py=/usr/bin/mkasczep.py \
+    mkobtzep.py=/usr/bin/mkobtzep.py
